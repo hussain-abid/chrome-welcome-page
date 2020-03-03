@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/index.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="box showMe box-1"></div>
+<div class="box showMe box-2"></div>
+
+
+<div class="box box-3"></div>
+<div class="box box-4"></div>
+<div class="box box-5"></div>
+<div class="box box-6"></div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script>
+
+    const box = document.querySelector('.box-1')
+    const tl = new TimelineMax({ repeat: -1})
+    tl.set(box, {x: 150,y:150})
+    tl.to(box,3, {ease: Power2.easeInOut,x: 160,y:170})
+    tl.to(box,3, {ease: Power2.easeInOut,x: 150,y:150})
+
+
+    const box2 = document.querySelector('.box-2')
+    const tl2 = new TimelineMax({ repeat: -1})
+    tl2.set(box2, {x: 200,y:200})
+    tl2.to(box2,4, {ease: Power2.easeInOut,x: 250,y:250})
+    tl2.to(box2,3, {ease: Power2.easeInOut,x: 200,y:200})
+
+
+    const box3 = document.querySelector('.box-3')
+    const tl3 = new TimelineMax({ repeat: -1})
+    tl3.set(box3, {x: 300,y:300})
+    tl3.to(box3,1, { ease: Power2.easeInOut,rotation: 0, transformOrigin:"50% 200px" })
+    tl3.to(box3,1, { ease: Power2.easeInOut,rotation: 360})
+
+    const box4 = document.querySelector('.box-4')
+    const tl4 = new TimelineMax({ repeat: -1})
+    tl4.set(box4, {x: 300,y:300})
+    tl4.to(box4,1.2, { ease: Power2.easeInOut,rotation: 0, transformOrigin:"50% 200px" })
+    tl4.to(box4,1.2, { ease: Power2.easeInOut,rotation: 360})
+
+
+
+    const box5 = document.querySelector('.box-5')
+    const tl5 = new TimelineMax({ repeat: -1})
+    tl5.set(box5, {x: 300,y:300})
+    tl5.to(box5,1.8, { ease: Power2.easeInOut,rotation: 360, transformOrigin:"50% 200px" })
+
+    const box6 = document.querySelector('.box-6')
+    const tl6 = new TimelineMax({ repeat: -1})
+    tl6.set(box6, {x: 300,y:300})
+    tl6.to(box6,2, { ease: Power2.easeInOut,rotation: 360, transformOrigin:"50% 200px" })
+
+
+
+
+
+    // tl.to(box,3, {ease: Power2.easeInOut,x: 100,y:100})
+    // tl.to(box, 3,{ease: Power2.easeInOut,x: 0,rotation:180})
+
+</script>
+</body>
+</html>

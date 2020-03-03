@@ -1,0 +1,16 @@
+/node_modules
+/node_modules1
+/storage
+/public/hot
+/public/storage
+/storage/*.key
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/vendor1
+/vendor2
+/vendor
+../ed_po/package-lock.json
